@@ -1,0 +1,662 @@
+
+body {
+    background-color: rgb(61, 61, 61);
+}
+
+
+* {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 17px;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    height: 90px;
+    position: fixed;
+    box-shadow: 0px 4px 10px 2px rgb(70, 70, 70);
+    border-bottom: 2px solid rgb(182, 181, 181) ;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+ .nav__container {
+    width: 90%;
+    display: flex;
+    height: 90px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__container img {
+    width: 80px;
+    height: 80px;
+    margin: auto 0;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    flex: 1;
+}
+
+.menu-horizontal li {
+    padding: 40px;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+}
+
+.menu-horizontal > li > a:hover {
+    background-color: #dfdfdf;
+    border-radius: 5px;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;  
+    list-style: none;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #f1f1f1, #a3a3a3) ;
+    border-radius: 5px;
+    box-shadow:  0px 3px 3px 0px rgb(53, 53, 53) ;
+    width: 180px;
+    text-align: center;
+}
+
+.menu-vertical li {
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.menu-vertical li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-horizontal > li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: #7a7a7a;
+}
+
+.menu-vertical-2 {
+    position: absolute;
+    display: none;  
+    list-style: none;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #f1f1f1, #a3a3a3) ;
+    border-radius: 5px;
+    box-shadow:  0px 3px 3px 0px rgb(53, 53, 53) ;
+    width: 180px;
+    text-align: center;
+    margin-left: -45px;
+}
+
+.menu-vertical-2 li {
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.menu-vertical-2 li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-horizontal > li:hover .menu-vertical-2 {
+    display: block;
+}
+
+.menu-vertical-2 li:hover {
+    background-color: #7a7a7a;
+}
+
+
+
+.menu-vertical- {
+    position: absolute;
+    display: none;  
+    list-style: none;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #f1f1f1, #a3a3a3) ;
+    border-radius: 5px;
+    box-shadow:  0px 3px 3px 0px rgb(53, 53, 53) ;
+    width: 180px;
+    text-align: center;
+    margin-left: -25px;
+}
+
+.menu-vertical- li {
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.menu-vertical- li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-horizontal  li:hover .menu-vertical- {
+    display: block;
+}
+
+.menu-vertical- li:hover {
+    background-color: #7a7a7a;
+}
+
+.menu-registrate {
+    list-style: none;
+}
+
+.menu-registrate > li > a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(245, 47, 96);
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 15px 5px;
+
+}
+
+.menu-registrate li a:hover {
+    background-color: rgb(255, 75, 120);
+}
+
+.menu-registrate > li:hover .menu-inicia {
+    display: block;
+}
+
+.menu-inicia {
+    position: absolute;
+    display: none;  
+    list-style: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding-top: 30px; 
+    text-align: center;
+    margin-left: -10px;
+}
+
+.menu-inicia li a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgb(245, 47, 96);
+    border-radius: 5px;
+    padding: 15px 5px; 
+}
+
+.menu-inicia li a:hover {
+    background-color: rgb(255, 75, 120);
+}
+
+.home-caja {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+    height: 100%;
+}
+
+.home-caja a {
+    text-decoration: none;  
+    background-color: #dddddd;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.home span {
+    color: rgb(20,20,20);   
+    font-weight: 700; 
+    font-size: 18px;
+    align-items: center;
+}
+
+.home i {
+    color: rgb(20, 20, 20);
+    font-size: 25px;
+} 
+ 
+ 
+.home:hover {
+     background-color: rgb(175, 175, 175); 
+}
+  
+
+.nav__menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px;
+}
+
+
+
+  /*Primera parte en la que esta el titulo de ayudar*/
+
+
+  .contenedor{
+    background: rgb(226, 208, 206);
+    width: 90%;
+    height: 500px;
+    margin: 100px auto;
+}
+
+.titulo {
+ background: rgb(226, 208, 206);
+  width: auto;
+  display: block;
+ 
+}
+.ayuda{
+    text-align: center;
+    background-color: rgb(226, 208, 206);
+    width: auto;
+  display: block;
+  font-size: 50px;
+  
+}
+.titulo > img{
+    float: left;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    background: rgb(226, 208, 206);
+    object-fit:cover;
+    object-position: left;
+}
+.titulo p{
+    background: rgb(226, 208, 206);
+    padding: 10px;;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Parte de las historias populares*/
+.flex-containt{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   height: 70vh;
+   align-content: flex-start;
+  
+}
+.imagen{
+    padding: 10px;
+    margin: 5px;
+  float: left;
+    height: 130px;
+    width: 150px;
+    text-align: center;
+    transition: all 1s;
+    background: brown;
+  
+}
+/*Modifica los contenedores de las historias populares*/
+.flex-item{
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    min-width: 120px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    transition: all 1s;
+    border-radius: 5px;
+    
+}
+
+
+/*Modifica los titulos de las historias populares*/
+.titulo4{
+    background-color: brown ;
+}
+      
+/* la interaccion del mouse*/
+
+.flex-item:hover{
+    background: salmon;
+    height: 500px;
+
+}
+/*Para alinear algunos titulos h1*/
+.historias{
+    color: #fff;
+    text-align: center;
+}
+
+/*Parte de las historias en las que se puede donar*/
+
+.contenedor2{
+    margin: 0 auto;
+    height: 100px;
+    display: inline-block;
+ 
+}
+/*Es donde estan contenidas las cajs de las historias */
+.contenedor-item{
+    display: inline-block;
+    background:rgb(226, 208, 206) ;
+    border-radius: 5px;
+    margin-left: 110px;
+    width: 84%;
+    padding-left: 20px;
+}
+
+/*Se modifican las cajas de las historias*/
+
+.contenedor-item1{
+  
+    background-color: bisque;
+    width: 300px;
+    height: 500px;
+    display: inline-block;
+    margin: 30px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.contenedor-item2{
+    
+    background-color: bisque;
+    width: 300px;
+    height: 500px;
+   display: inline-block;
+   margin: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.contenedor-item3{
+   
+    background-color: bisque;
+    width: 300px;
+    height: 500px;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contenedor-item4{
+   
+    background-color: bisque;
+    width: 300px;
+    height: 500px;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    }
+    .contenedor-item5{
+      
+        background-color: bisque;
+        width: 300px;
+        height: 500px;
+        display: inline-block;
+        margin: 30px;
+        border-radius: 5px;
+        overflow: hidden;
+        }
+/*Tamaño de las imagenes*/
+      .item-img{
+       width: 100%;
+       height:150px ;
+       object-fit: cover;
+
+      }
+        .contenedor-item6{
+           
+            background-color: bisque;
+            width: 300px;
+            height:500px;
+            display: inline-block;
+            margin: 30px;
+            border-radius: 5px;
+            overflow: hidden;
+            }
+            
+              b{
+                background-color:bisque ;
+              }
+                            /*Boton para donar*/
+              .item-button{
+                 width: 100px;
+                 height: 50px;
+               margin: auto;
+               text-align: center;
+               background-color:  bisque;
+               border-radius: 5px;
+               padding: 10px;
+              }
+            
+  /*Para modificar el botton */
+              a.button {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+            
+                text-decoration: none;
+                color: initial;
+                background:transparent;
+                color: rgb(0, 0, 0);
+               border-radius: 5px;
+                border-bottom: 2px solid salmon;
+                padding: 12px;
+              
+            }
+           
+       
+            a.button:focus{
+        background: linear-gradient(to bottom, transparent,rgb(203, 154, 223));
+        outline: none;
+        border-bottom:3px solid rgb(198, 174, 219);
+        }
+      
+        a.button:hover{
+            background-color: rgb(211, 178, 241);
+            border-bottom: none;
+            padding: 12px;
+        }
+       
+        a.button:active{
+            background:linear-gradient(to bottom,rgb(205, 166, 228),rgb(119, 0, 103));
+          
+        }
+/*parte en donde esta el realhope esta para lo que necesites*/
+                        .flex-containt2{
+                            display: flex;
+                           flex-wrap: wrap;
+                           justify-content: space-evenly;
+                           height: 50vh;
+                           align-content: flex-start;
+                          
+                        }
+                        
+                        .flex-item2{
+                            background-color: rgb(168, 157, 157);
+                            color: rgb(255, 255, 255);
+                            padding: 30px;
+                            margin: 5px;
+                            min-width: 120px;
+                            height: 300px;
+                            width: 300px;
+                            text-align: center;
+                            transition: all 1s;
+                            border-radius: 5px;
+                            
+                        }
+
+                    .donacion{
+                        background-color: rgb(168, 157, 157);
+                           
+                    }           
+                      
+
+/* Footer de la pagina  */
+.contenedor__footer {
+    width: 100%;
+    background-color: #000; 
+    padding: 50px 0px;
+}
+
+.footer__superior {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.footer__superior div {
+    text-align: center;
+    height: 100%;
+}
+
+/* FOOTER MAS INFOR */
+.footer__infor {
+    width: 200px;
+}
+
+.footer__infor li {
+    list-style:inside;
+    padding-bottom: 4px;
+}
+
+.footer__infor h3 {
+    font-size: 25px;
+    color: rgb(237, 36, 85);
+    text-align: center;
+}
+
+.footer__infor a {
+     color: rgb(255, 255, 255); 
+}
+
+.footer__infor ul {
+    color: rgb(255, 255, 255); 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+}
+
+.footer__infor a:hover {
+    color: #b3b3b3;
+}
+
+.footer__infor li:hover {
+    color: #b3b3b3;
+}
+
+
+
+/* FOOTER AGRADECIMIENTO */
+.footer__superior-1 {
+    width: 300px;
+}
+
+.footer__superior-1 h3 {
+    color: rgb(237, 36, 85);
+    font-size: 25px;
+}
+
+.footer__superior-1 p {
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+}
+
+/* footer redes */
+.footer__redes {
+    width: 200px;
+}
+
+.footer__redes h3 {
+    font-size: 25px;
+    color: rgb(237, 36, 85);
+}
+
+.footer__icon {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.footer__icon a {
+    color: rgb(255, 255, 255) ;
+}
+
+.footer__icon i {
+    font-size:  25px;
+    padding-bottom: 10px;
+}
+
+.footer__icon i:hover {
+    color: #b3b3b3;
+}
+
+
+
+/* footer copy */
+.footer__inferior {
+    display: flex;
+    width: 100%;
+    border-top:#dfdfdf solid 1px;
+    background-color: rgb(0, 0, 0);
+    padding: 30px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__inferior div {
+    margin: 0 30px;
+}
+
+.footer__copy {
+    font-size: 13px;
+    color: #c7c7c7;
+}
+
+.footer__cyp {
+    display: flex;
+}
+
+.footer__cyp a {
+    font-size: 13px;
+    color: #c7c7c7;
+}
+
+
+.footer__cyp li {
+    color: #c7c7c7;
+    margin: 0 20px;
+}
+
+.footer__cyp li:hover {
+    color: #fff;
+}
+
+.footer__cyp a:hover {
+    color: #fff;
+}

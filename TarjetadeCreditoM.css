@@ -1,0 +1,92 @@
+
+*{
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-weight: 100;
+     font-size:20px ;
+    
+}
+body{
+    background-color: rgb(233, 190, 190);
+}
+.flex-containt{
+    display: flex;
+  background: rgb(231, 169, 169);
+  align-items: center;
+   flex-wrap:wrap ;
+justify-content: center;
+margin: 50px 50px;
+padding: 20px;
+}
+.form{
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order:5 ;
+}
+
+.form__input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom:3px solid rgb(160, 127, 190);
+    background:transparent;
+    color: white;
+}
+.form__input:focus{
+background: linear-gradient(to bottom, transparent,rgb(236, 172, 172));
+outline: none;
+border-bottom:3px solid rgb(101, 52, 146);
+}
+
+
+.form-img{
+    flex: 1;
+   min-width: 300px;
+   max-width: 400px;
+    display: flex;
+    order: 2;
+}
+.form-img div{
+  
+    padding: 10px;
+} 
+.img-containt{
+    margin: auto;
+ 
+ 
+}
+
+.form-img img{
+    width: 90%;
+    margin: auto;
+    
+    
+}
+a.button{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+}
+
+a.button{
+    background-color: rgb(151, 137, 163);
+    border-bottom: none;
+    padding: 12px;
+}
+a.button:hover{
+    background-color: rgb(182, 132, 248);
+    border-bottom: none;
+    padding: 12px;
+}
+a.button:focus{
+    background-color: rgb(139, 77, 197);
+  
+}
+a.button:active{
+    background:linear-gradient(to bottom,rgb(207, 156, 236),rgb(241, 135, 227));
+  
+}
